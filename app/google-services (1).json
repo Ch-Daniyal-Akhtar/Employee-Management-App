@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "568616129882",
+    "firebase_url": "https://payroll-2ddfe-default-rtdb.firebaseio.com",
+    "project_id": "payroll-2ddfe",
+    "storage_bucket": "payroll-2ddfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568616129882:android:183b6cd59ce406facbcf63",
+        "android_client_info": {
+          "package_name": "com.example.myjavaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568616129882-a7joanabsvv4uo1hgepdru7qucm04mh1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myjavaproject",
+            "certificate_hash": "483197fbd12ea47532524c803024bf81fbc1cade"
+          }
+        },
+        {
+          "client_id": "568616129882-lu1t25vfsk9jn0doqu84dqgjdsgf33th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMt5c08ROfb5oXOwOtuO427XLrMLBWe58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568616129882-lu1t25vfsk9jn0doqu84dqgjdsgf33th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

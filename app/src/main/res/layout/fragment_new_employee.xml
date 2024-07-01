@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEmployee">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#039BE5"
+            android:layout_marginBottom="10dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="#737E8A"
+                android:src="@drawable/person_white"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/camerabtn"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_alignEnd="@id/profileImageView"
+                android:layout_alignBottom="@id/profileImageView"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/camera5"
+                app:fabCustomSize="40dp"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rcblack"
+            android:drawableLeft="@drawable/persongray"
+            android:drawablePadding="15dp"
+            android:hint="Employee Name"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="#868D95"
+            android:textColorHint="#868D95"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rcblack"
+            android:drawableLeft="@drawable/suitcase"
+            android:drawablePadding="15dp"
+            android:hint="Job"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="#868D95"
+            android:textColorHint="#868D95"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rcblack"
+            android:drawableLeft="@drawable/salary"
+            android:drawablePadding="15dp"
+            android:hint="Salary"
+            android:inputType="number"
+            android:padding="18dp"
+            android:textColor="#868D95"
+            android:textColorHint="#868D95"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rcblack"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:drawablePadding="15dp"
+            android:hint="Contact"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="#868D95"
+            android:textColorHint="#868D95"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo_chettan"
+            android:paddingLeft="10dp"
+            android:text="Gender"
+            android:textColor="#2886F3"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Male"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Female"
+                android:layout_marginLeft="30dp"
+                android:textColor="#868D95" />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/baloo_chettan"
+            android:paddingLeft="10dp"
+            android:text="Days off in a Week"
+            android:textColor="#2886F3"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Monday"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Tuesday"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Wednesday"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Thursday"
+                android:textColor="#868D95" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="14dp"
+                android:text="Friday"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Saturday"
+                android:textColor="#868D95" />
+
+            <CheckBox
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Sunday"
+                android:textColor="#868D95" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rcblack"
+            android:drawableLeft="@drawable/calendergray"
+            android:drawablePadding="15dp"
+            android:focusable="false"
+            android:hint="Select Start Date"
+            android:inputType="none"
+            android:onClick="showDatePickerDialog"
+            android:padding="18dp"
+            android:textColor="#868D95"
+            android:textColorHint="#868D95" />
+
+<Button
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:textColor="@drawable/button_text_color_g"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="@drawable/background_present"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp"
+    android:clickable="true"
+/>
+
+
+    </LinearLayout>
+</RelativeLayout>
